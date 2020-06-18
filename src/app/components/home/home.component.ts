@@ -14,8 +14,9 @@ export class HomeComponent implements OnInit {
   }
   show(){
     this.dog.getImages().subscribe((data) => {
-      this.data = data;
       console.log(data)
+      // this.data = data;
+     
     })
   }
 }

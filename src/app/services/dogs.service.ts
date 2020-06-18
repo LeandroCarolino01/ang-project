@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DogsService {
-  url:string = "https://dog.ceo/api/breeds/image/random";
+  url:string = "https://dog.ceo/api/breeds/image/all";
 
   constructor(private http: HttpClient) { }
 
