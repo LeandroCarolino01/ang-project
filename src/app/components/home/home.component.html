@@ -1,5 +1,9 @@
 <button (click)="show()">test</button>
 <div *ngFor="let dog of data">
-    <img src="{{ dog.message }}"alt="">
-    <p>{{ dog.message }}</p>
+  <img src="{{ dog.message }}" alt="" />
+  <p>{{ dog.message }}</p>
+</div>
+
+<div *ngFor="let dog of allBreeds | keyvalue">
+  <p [innerHTML]="dog['key']"></p>
 </div>
